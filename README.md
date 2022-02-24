@@ -1,14 +1,14 @@
-# anymapper
+# anymapper template
 ### Visualize your data as a zoomable map
 
-*anymapper* provides a collection of [Svelte](https://svelte.dev/) UI components. It follows a literal interpretation of Ben Shneiderman's [Visual Information-Seeking Mantra](https://infovis-wiki.net/wiki/Visual_Information-Seeking_Mantra), providing a familiar, Google Maps-like user interface. (add support for Material Design)
+A template for [anymapper](https://github.com/webvis/anymapper) applications. Please refer to the link for more information.
 
 ## Get started
 
-Install the dependencies...
+Start by cloning this repo and installing the dependencies...
 
 ```bash
-cd viskel
+cd my-project
 npm i
 ```
 
@@ -42,22 +42,4 @@ If you're building a single-page app (SPA) with multiple routes, sirv needs to b
 
 ```js
 "start": "sirv public --single"
-```
-
-## [Internal]
-This creates a new repo that can pull from Viskel as the *upstream* remote, but with disabled pushes.
-Create an empty repo *repoName*.
-
-```bash
-git clone https://github.com/webvis/viskel.git repoName
-cd repoName
-git remote rename origin upstream
-git remote add origin https://github.com/webvis/repoName.git
-```
-
-Change the readme and commit the changes. Then:
-
-```bash
-git push -u origin master
-git remote set-url --push upstream DISABLE
 ```
